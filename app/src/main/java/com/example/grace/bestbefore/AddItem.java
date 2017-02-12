@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import java.text.DateFormat;
 import java.util.Calendar;
+import android.widget.Spinner;
 
 
 public class AddItem extends AppCompatActivity {
@@ -20,6 +21,7 @@ public class AddItem extends AppCompatActivity {
     private TextView text;
     private Button btn_date;
     private Button btn_time;
+    private Spinner foodType;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,7 @@ public class AddItem extends AppCompatActivity {
         text = (TextView) findViewById(R.id.txt_TextDateTime);
         btn_date = (Button) findViewById(R.id.btn_datePicker);
         btn_time = (Button) findViewById(R.id.btn_timePicker);
-
+        addListenerOnSpinnerItemSelection();
         btn_date.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,6 +47,11 @@ public class AddItem extends AppCompatActivity {
         });
 
         updateTextLabel();
+    }
+
+    public void addListenerOnSpinnerItemSelection() {
+        foodType = (Spinner) findViewById(R.id.foodType);
+        foodType.setOnItemSelectedListener(new CustomOnItemSelectedListener());
     }
 
     private void updateDate(){
