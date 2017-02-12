@@ -13,19 +13,6 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/foodName"
-        android:hint="Add Name"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/note"
@@ -39,24 +26,45 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="date"
+        android:inputType="textPersonName"
         android:ems="10"
-        android:layout_marginTop="15dp"
-        android:id="@+id/expirationDate"
-        android:hint="Select expiration date"
-        android:layout_below="@+id/foodName"
+        android:id="@+id/foodName"
+        android:hint="Add Name"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:id="@+id/picDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Expiration Date"
+        android:background="#ccc"
+        android:onClick="datePicker"
+        android:layout_below="@+id/foodName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp" />
+
     <Spinner
         android:id="@+id/type"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/expirationDate"
+        android:layout_width="match_parent"
         android:spinnerMode="dropdown"
-        android:layout_marginTop="31dp"
-        android:layout_alignRight="@+id/expirationDate"
-        android:layout_alignEnd="@+id/expirationDate"
+        android:layout_below="@+id/picDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_height="60px" />
+
+    <TextView
+        android:text="Expiration Date"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:id="@+id/expirationDate"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/type"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
