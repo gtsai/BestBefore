@@ -47,37 +47,6 @@
         android:textSize="14sp"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:text="Date/Time: "
-        android:layout_width="wrap_content"
-        android:id="@+id/textView"
-        android:layout_marginTop="12dp"
-        android:layout_below="@+id/btn_timePicker"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_height="60px" />
-
-
-    <Spinner
-        android:id="@+id/type"
-        android:layout_width="match_parent"
-        android:spinnerMode="dropdown"
-        android:layout_height="60px"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:text="DateTimePicker"
-        android:textAlignment="center"
-        android:id="@+id/txt_TextDateTime"
-        android:layout_alignBaseline="@+id/textView"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_toRightOf="@+id/textView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_height="60px" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -92,5 +61,45 @@
         android:layout_marginTop="22dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/submitButton" />
+
+    <TextView
+        android:text="Date/Time: "
+        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="24dp"
+        android:layout_height="60px"
+        android:layout_below="@+id/btn_timePicker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:text="DateTimePicker"
+        android:textAlignment="center"
+        android:id="@+id/txt_TextDateTime"
+        android:layout_height="60px"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
 
 </RelativeLayout>
