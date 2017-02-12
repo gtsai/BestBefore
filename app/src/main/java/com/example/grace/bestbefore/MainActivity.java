@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.content.Intent;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -19,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         FloatingActionButton addItemBtn = (FloatingActionButton) findViewById(R.id.addItem);
         addItemBtn.setOnClickListener(new View.OnClickListener() {
             @Override

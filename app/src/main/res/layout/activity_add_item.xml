@@ -19,9 +19,65 @@
         android:hint="Add Name"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btn_datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Expiration Date"
+        android:background="#ccc"
+        android:onClick="datePicker"
+        android:layout_below="@+id/foodName"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:textAllCaps="false"
+        android:layout_marginTop="12dp"
+        android:textSize="14sp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Expiration Time"
+        android:background="#ccc"
+        android:id="@+id/btn_timePicker"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btn_datePicker"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Date/Time: "
+        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/btn_timePicker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="60px" />
+
+
+    <Spinner
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:spinnerMode="dropdown"
+        android:layout_height="60px"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:text="DateTimePicker"
+        android:textAlignment="center"
+        android:id="@+id/txt_TextDateTime"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_height="60px" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -30,34 +86,11 @@
         android:ems="10"
         android:id="@+id/note"
         android:hint="Add Note"
+        android:layout_below="@+id/type"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="22dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="date"
-        android:ems="10"
-        android:layout_marginTop="15dp"
-        android:id="@+id/expirationDate"
-        android:hint="Select expiration date"
-        android:layout_below="@+id/foodName"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Spinner
-        android:id="@+id/type"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/expirationDate"
-        android:spinnerMode="dropdown"
-        android:layout_marginTop="31dp"
-        android:layout_alignRight="@+id/expirationDate"
-        android:layout_alignEnd="@+id/expirationDate"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
