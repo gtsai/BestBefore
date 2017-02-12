@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">BestBefore</string>
     <string name="action_settings">Settings</string>
+    <string name="food_type_prompt">Select food type</string>
+    <string-array name="food_type_array">
+        <item>Fruit</item>
+        <item>Vegetable</item>
+        <item>Dairy</item>
+        <item>Meats</item>
+        <item>Dry Foods</item>
+        <item>Other</item>
+    </string-array>
+
 </resources>

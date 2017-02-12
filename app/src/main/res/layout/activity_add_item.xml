@@ -55,7 +55,7 @@
         android:ems="10"
         android:id="@+id/note"
         android:hint="Add Note"
-        android:layout_below="@+id/type"
+        android:layout_below="@+id/foodType"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="22dp"
@@ -94,12 +94,15 @@
         android:layout_alignParentStart="true" />
 
     <Spinner
-        android:id="@+id/type"
+        android:id="@+id/foodType"
         android:layout_width="match_parent"
         android:layout_height="60px"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="22dp" />
+        android:layout_marginTop="22dp"
+        android:prompt="@string/food_type_prompt"
+        android:entries="@array/food_type_array"
+        android:spinnerMode="dialog" />
 
 </RelativeLayout>
